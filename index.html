@@ -1,0 +1,187 @@
+x<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+    .nyupic {padding-top: 10px;padding-bottom: 20px; padding-left: 20px}
+    .sweatshirtpic {border=5px}
+    
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-yellow w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  
+    <h2 class="nyupic"><img  src="nyu.png" height="300"  alt="nyupic"></h2>
+  
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">About Me</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">My Music</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Merch</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Diva Smith</b> </h1>
+      
+    <h1 class="w3-xxxlarge w3-text-orange"><b>About Me.</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      18 year old from Los Angeles, California. Growing up I was always involved in the music scene. Going to different concerts every weekend, my love for music has only grown stronger as I've gotten older.
+    </div>
+      I started playing music around the age of ten. My dad always had guitars laying around the house and one day I decided to pick one up and start playing. From there, I began writing my own music: And that's where it all began...     
+    <div class="w3-half">
+      
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>My Music.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>I didn't start actually writing my own music until the summer before senior year. I was applying to colleges and wanted to submit something that I thought truly represented me. I attended a song writing camp in Los Angeles and wrote my first song, (name). </p>
+    <p> - Links to my music below - <br>
+         A little tradition my family and I keep is covering songs every christmas as a gift for my mom. Here are some of those... <br>
+          <br>
+        <a href="https://soundcloud.com/divasmith/santa-baby">Santa Baby</a> <br>
+        <a href="https://soundcloud.com/divasmith/white-christmas">White Christmas</a>   
+            <br>
+        <a href="https://soundcloud.com/divasmith/merry-little-christmas">Merry Little Christmas </a><br>
+        <a href="https://soundcloud.com/divasmith/ill-be-home-for-christmas">I'll be Home for Christmas</a> <br>
+        <a href="https://soundcloud.com/divasmith/merry-christmas-darling">Merry Christmas Darling</a>
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-pink"><b>Merchandise.</b></h1>
+    <hr style="width:50px;border:5px solid pink" class="w3-round">
+    
+    <p><strong>Unique & original shirts, sweatshirts, and bags coming soon!</strong></p>
+    <p>Designed by Wilder Smith:</p>
+  </div>
+
+  <!-- The Merch -->
+  <div >
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        
+        <div class="w3-container">
+          <h3>Shirts</h3>
+          <p class="w3-opacity">Comes June 30, 2018</p>
+          <p>Reese Limited Edition Shirt</p> <img src="ShirtReese.png" alt="White Shirt with Picture Decal" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+       
+        <div class="w3-container">
+          <h3>Sweatshirts/ Hoodies</h3>
+          <p class="w3-opacity">Comes June 30, 2018</p>
+          <p class="sweatshirtpic"> <img src="newdivasweatshirt.png" alt="White-Sweatshirt" height="250"></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        
+        <div class="w3-container">
+          <h3>Accessories</h3>
+          <p class="w3-opacity">Comes June 30, 2018</p>
+          <p>Fanny Pack</p> <img src="DivaFannyPack.png" alt="White Bag" height="250">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p><strong>Email</strong> me below for inquiries.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
